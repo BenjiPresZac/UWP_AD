@@ -26,5 +26,15 @@ namespace MenuBook1
         {
             this.InitializeComponent();
         }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            MyMenu.IsPaneOpen = !MyMenu.IsPaneOpen;
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Page1));
+        }
     }
 }

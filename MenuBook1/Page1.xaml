@@ -10,12 +10,12 @@
     <SplitView x:Name="MyMenu" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="35" OpenPaneLength="100">
         <SplitView.Pane>
             <StackPanel Background="BlueViolet">
-                <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Click="HamburgerButton_Click"/>
+                <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" />
                 <Button x:Name="button1" FontFamily="Segoe MDL2 Assets" Content="&#xE70F;">
                 </Button>
                 <Button x:Name="button2" FontFamily="Segoe MDL2 Assets" Content="&#xE723;">
                 </Button>
-                <Button x:Name="button3" FontFamily="Segoe MDL2 Assets" Content="&#xE016;" Click="button3_Click">
+                <Button x:Name="button3" FontFamily="Segoe MDL2 Assets" Content="&#xE017;">
                 </Button>
             </StackPanel>
         </SplitView.Pane>
@@ -26,7 +26,7 @@
                     <RowDefinition Height="581*"/>
                     <RowDefinition Height="59*"/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Pagina Dos" TextAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Pagina 2" TextAlignment="Center" VerticalAlignment="Center">
                 </TextBlock>
             </Grid>
         </SplitView.Content>
