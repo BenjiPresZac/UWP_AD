@@ -26,7 +26,7 @@
                     <RowDefinition Height="581*"/>
                     <RowDefinition Height="59*"/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Pagina Principal" TextAlignment="Center" VerticalAlignment="Center">
+                <TextBlock FontSize="40"  Text="Pagina Principal" TextAlignment="Center" VerticalAlignment="Center">
                 </TextBlock>                
             </Grid>
         </SplitView.Content>

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Contacts;
+using Windows.ApplicationModel.Email;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +27,27 @@ namespace MenuBook1
         public Page1()
         {
             this.InitializeComponent();
+        }
+
+        private async void email_Click(object sender, RoutedEventArgs e)
+        {
+            EmailMessage email = new EmailMessage();
+            email.To.Add(new EmailRecipient("benjim.flores@outlook.com"));
+            email.Subject = "Message Prueba";
+            //var file = await GetTextFile();
+            //email.Attachments.Add(new EmailAttachment(file.Name, file));
+​            await EmailManager.ShowComposeNewEmailAsync(email);
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+
+            Frame.Navigate(typeof(MainPage));
+            /*
+            if (button3.IsPressed == false)
+                button3.Content = "\uE017";
+            else
+                button3.Content = "\uE711";*/
         }
     }
 }

@@ -15,19 +15,16 @@
                 </Button>
                 <Button x:Name="button2" FontFamily="Segoe MDL2 Assets" Content="&#xE723;">
                 </Button>
-                <Button x:Name="button3" FontFamily="Segoe MDL2 Assets" Content="&#xE017;">
+                <Button x:Name="button3" FontFamily="Segoe MDL2 Assets" Content="&#xE017;" Click="button3_Click">
                 </Button>
             </StackPanel>
         </SplitView.Pane>
 
         <SplitView.Content>
             <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="581*"/>
-                    <RowDefinition Height="59*"/>
-                </Grid.RowDefinitions>
-                <TextBlock Text="Pagina 2" TextAlignment="Center" VerticalAlignment="Center">
-                </TextBlock>
+                <TextBlock TextAlignment="Center" Margin="79,170,109,440">Envio de Email</TextBlock>
+                <Button x:Name="email" FontFamily="Segoe MDL2 Assets" Content="&#xE715;" Margin="110,205,0,408" Width="80" Click="email_Click">
+                </Button>
             </Grid>
         </SplitView.Content>
     </SplitView>
